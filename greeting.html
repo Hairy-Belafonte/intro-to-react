@@ -25,6 +25,22 @@
        ReactDOM.render(
          <Greeting name="Bloc Student"/>, document.getElementById("app")
        );
+       
+       ReactDOM.render(
+        <Greeting />, document.getElementById('app')
+      );
+      class Farewell extends React.Component {
+        render() {
+          return (
+            <div>
+              <h1>Farewell {this.props.name}!</h1>
+            </div>
+          );
+        }
+      }
+      ReactDOM.render(
+        <Farewell name="Bloc Student"/>, document.getElementById('app')
+      );
     </script>
   </body>
 </html>
