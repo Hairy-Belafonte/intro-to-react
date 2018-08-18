@@ -4,8 +4,9 @@ class ToDo extends Component {
     render () {
         return (
             <li>
-         <input type="checkbox" checked={ this.props.isCompleted } />
+         
          <span>{ this.props.description }</span>
+         <input onClick={this.props.deleteTodo} type="button" value="completed"/>
        </li>
         );
     }
